@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vim History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='vim.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Past Explorer</h2>
+        <a href="/">Home</a>
+        <a href="/shell-history">Shell History</a>
+        <a href="/browser-history">Browser History</a>
+        <a href="/desktop-env-history">Environment History</a>
+        <a href="/journalctl-entry">Journalctl Entry</a>
+        <a href="/user-session-logs">User Session Logs</a>
+        <a href="/vim-history">Vim History</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Vim History</h1>
+        
+        <!-- Search Bar -->
+        <input type="text" id="search-input" placeholder="Search for a command..." class="search-bar">
+        <button id="fetch-vim-history">Show Vim History</button>
+
+        <!-- Display Results -->
+        <div id="vim-history-output"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='vim.js') }}"></script>
+</body>
+</html>

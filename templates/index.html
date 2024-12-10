@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Explorer - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Past Explorer</h2>
+        <a href="/">Home</a>
+        <a href="/shell-history">Shell History</a>
+        <a href="/browser-history">Browser History</a>
+        <a href="/desktop-env-history">Environment History</a>
+        <a href="/journalctl-entry">Journalctl Entry</a>
+        <a href="/user-session-logs">User Session Logs</a>
+        <a href="/vim-history">Vim History</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="welcome-section">
+            <h1>Welcome to Past Explorer</h1>
+            <p>Your journey through history begins here. Explore your system's command and browser history with ease.</p>
+            <img src="{{ url_for('static', filename='images/sherlock.png') }}" class="centered-image" alt="Sherlock Holmes">
+        </div>
+    </div>
+
+
+    <!-- Background Effects -->
+    <div class="bg-effects"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

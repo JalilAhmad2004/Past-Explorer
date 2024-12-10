@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='browser_history.css') }}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Past Explorer</h2>
+        <a href="/">Home</a>
+        <a href="/shell-history">Shell History</a>
+        <a href="/browser-history">Browser History</a>
+        <a href="/desktop-env-history">Environment History</a>
+        <a href="/journalctl-entry">Journalctl Entry</a>
+        <a href="/user-session-logs">User Session Logs</a>
+        <a href="/vim-history">Vim History</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Browser History</h1>
+        
+        <!-- Search Bar -->
+        <input type="text" id="search" class="search-bar" placeholder="Search for a website" />
+
+        <!-- Fetch Button -->
+        <button id="fetch-history" class="fetch-button">Fetch History</button>
+
+        <!-- History Results -->
+        <div id="history-results"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='browser_history.js') }}"></script>
+</body>
+</html>
