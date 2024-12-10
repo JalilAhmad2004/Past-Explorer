@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #6A1B9A; /* Purple color */
+    color: white;
+    width: 250px;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    display: block;
+    transition: padding-left 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+    background-color: white; /* White hover effect */
+    color: #6A1B9A; /* Purple text on hover */
+    padding-left: 15px;
+}
+
+.sidebar a::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar a:hover::before {
+    opacity: 1;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    background-color: #f6f6f6;
+    transition: margin-left 0.3s ease-in-out;
+    z-index: 5;
+}
+
+/* Welcome Section Styling */
+.welcome-section {
+    text-align: center;
+    animation: slideIn 1.5s ease-out;
+}
+
+.welcome-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #6A1B9A; /* Purple */
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.5;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; /* Adjust width as needed */
+    height: 500px; /* Ensures aspect ratio is maintained */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
