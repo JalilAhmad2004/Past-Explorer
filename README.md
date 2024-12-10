@@ -1,6 +1,13 @@
 # PastExplorer
 
-**PastExplorer** is a Linux-based command history logger and extractor tool designed to efficiently capture, manage, and analyze terminal command histories. This tool empowers users with an enhanced command-line experience, making it easier to log, retrieve, search, and analyze their activities on the terminal.
+**PastExplorer** is a powerful Linux-based tool designed to capture, manage, and analyze various types of user history data. From terminal commands to browser activities, PastExplorer empowers users with a holistic view of their system activities, making it easier to log, retrieve, search, and analyze:
+
+- Bash history 🖥️
+- Browser history 🌐
+- User session logs 📝
+- Desktop environment history 💻
+- Journalctl entries 📓
+- Vim history 🖱️
 
 Developed by four passionate cyber enthusiasts from **FAST NUCES**, PastExplorer reflects our dedication to providing robust solutions for command-line users.
 
