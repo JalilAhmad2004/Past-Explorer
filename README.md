@@ -76,7 +76,7 @@ To run PastExplorer, ensure the following dependencies are installed:
 - **Umer Farooq** ([w0lt41r](https://github.com/w0lt41r))
 - **Abdul Moeez** ([Abdul-Moeez4](https://github.com/Abdul-Moeez4))
 - **Jalil Ahmad** ([JalilAhmad2004](https://github.com/JalilAhmad2004))
-- **Aleena Fatima** ([Aleena-Fatima](https://github.com/Aleena-Fatima))
+- **Aleena Fatima** ([Aleena-Fatima](https://github.com/aleenafatimaqureshi))
 
 ---
 
