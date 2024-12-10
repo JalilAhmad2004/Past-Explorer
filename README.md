@@ -40,11 +40,11 @@ To run PastExplorer, ensure the following dependencies are installed:
 ## 🔧 Installation
 1. Clone this repository using Git or download the ZIP file and extract it:
    ```bash
-   git clone https://github.com/Abdul-Moeez4/PastExplorer.git
+   git clone https://github.com/JalilAhmad2004/Past-Explorer.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd PastExplorer
+   cd Past-Explorer
    ```
 3. Install the required Python dependencies:
    ```bash
@@ -52,7 +52,7 @@ To run PastExplorer, ensure the following dependencies are installed:
    ```
 4. Run the application:
    ```bash
-   python app.py
+   python3 app.py
    ```
 
 5. Open your browser and navigate to:
